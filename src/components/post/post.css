@@ -19,6 +19,8 @@
 .postTopLeft {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .postProfileImg {
@@ -35,6 +37,12 @@
 
 .postDate {
     font-size: small;
+}
+
+.postOptions {
+    display: flex;
+    position: relative;
+    margin-left: auto;
 }
 
 .postCenter {

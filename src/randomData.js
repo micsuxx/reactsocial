@@ -73,3 +73,46 @@ export const Posts = [
         comment: 10,
     },
 ];
+
+// export const OnlineUsers = [
+//     {
+//         id: 1,
+//         profilePicture: "public/assets/malecostume-512.webp",
+//         username: "Fredrik Fredriksson",
+//     },
+//     {
+//         id: 2,
+//         profilePicture: "public/assets/malecostume-512.webp",
+//         username: "Gustaf Gustafsson",
+//     },
+//     {
+//         id: 3,
+//         profilePicture: "public/assets/malecostume-512.webp",
+//         username: "Anders Andersson",
+//     },
+//     {
+//         id: 4,
+//         profilePicture: "public/assets/malecostume-512.webp",
+//         username: "Erik Eriksson",
+//     },
+//     {
+//         id: 5,
+//         profilePicture: "public/assets/malecostume-512.webp",
+//         username: "Olaf Olafsson",
+//     },
+//     {
+//         id: 6,
+//         profilePicture: "public/assets/malecostume-512.webp",
+//         username: "Per-Åke Persson",
+//     },
+//     {
+//         id: 7,
+//         profilePicture: "public/assets/malecostume-512.webp",
+//         username: "Peter Petersson",
+//     },
+//     {
+//         id: 8,
+//         profilePicture: "public/assets/malecostume-512.webp",
+//         username: "Jan Jansson",
+//     },
+// ]

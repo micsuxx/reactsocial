@@ -1,8 +1,16 @@
 import "./post.css";
 import { MoreVert } from "@mui/icons-material";
 import { Users } from "../../randomData";
+import { useState} from "react";
 
 export default function Post({post}) {
+  const [like, setLike] = useState(post.like)
+  const [isLiked, setIsLiked] = useState(false)
+
+  const likeHandler =()=> {
+    setLike(isLiked ? like-1 : like+1)
+    setIsLiked(!isLiked)
+  }
   return (
     <div className="post">
         <div className="postWrapper">
@@ -15,7 +23,7 @@ export default function Post({post}) {
                     />
                     <span className="postUsername">{Users.filter(u=>u.id === post.userId)[0].username}</span>
                     <span className="postDate">{post.date}</span>
-                    <MoreVert/>
+                    <MoreVert className="postOptions"/>
                 </div>
                 <div className="postTopRight"></div>
             </div>
@@ -25,9 +33,9 @@ export default function Post({post}) {
             </div>
             <div className="postBottom">
                 <div className="postBottomLeft">
-                    <img className="likeIcon" src="./assets/facebook-reaction-like.svg" alt="" />
-                    <img className="heartIcon" src="./assets/2489672.webp" alt="" />
-                    <span className="postLikeCounter">{post.like} people like it!</span>
+                    <img className="likeIcon" src="./assets/facebook-reaction-like.svg" onClick={likeHandler} alt="" />
+                    <img className="heartIcon" src="./assets/2489672.webp" onClick={likeHandler} alt="" />
+                    <span className="postLikeCounter">{like} people like it!</span>
                 </div>
                 <div className="postBottomRight">
                     <span className="postCommentText">{post.comment} comments</span>
